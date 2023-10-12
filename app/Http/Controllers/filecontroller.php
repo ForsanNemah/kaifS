@@ -20,6 +20,16 @@ class filecontroller extends Controller
 
         Vila::create($data);
 
+        echo '<script type="text/javascript">
+        
+        alert("تمت  العملية بنجاح          ");
+        window.open("index.php", "_self");
+        
+        </script>
+        
+        ';
+     
+
         //return  $result;
     }
 }
