@@ -52,7 +52,7 @@ class VilaResource extends Resource
               
                 ImageColumn::make('file'),
 
-                TextColumn::make('branch1')->label('Q2'),
+                TextColumn::make('branch1')->label('Branch'),
                 TextColumn::make('sellers_satis')->label('Q3'),
                 TextColumn::make('cashier_satis')->label('Q4'),
                 TextColumn::make('total_satis')->label('Q5'),
