@@ -18,4 +18,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('/ls', function () {
+    Artisan::call('storage:link') ;
+});
+
+
  
