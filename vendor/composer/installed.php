@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'c1cb39a0e4b335fb3e70d127821a457ccc6d6e50',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -524,12 +524,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'c1cb39a0e4b335fb3e70d127821a457ccc6d6e50',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -650,12 +650,12 @@
             'dev_requirement' => false,
         ),
         'livewire/livewire' => array(
-            'pretty_version' => 'v3.0.7',
-            'version' => '3.0.7.0',
+            'pretty_version' => 'v3.0.8',
+            'version' => '3.0.8.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../livewire/livewire',
             'aliases' => array(),
-            'reference' => 'a2fc40f6121362581e72d5da5d820a6af00f62b0',
+            'reference' => '6f62019a0e821894f701ca463210c01d7369c929',
             'dev_requirement' => false,
         ),
         'masterminds/html5' => array(
