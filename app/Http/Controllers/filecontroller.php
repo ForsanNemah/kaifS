@@ -23,7 +23,7 @@ class filecontroller extends Controller
         echo '<script type="text/javascript">
         
         alert("تمت  العملية بنجاح          ");
-        window.open("index.php", "_self");
+        window.open("http://pscye.com/kaif/vla/", "_self");
         
         </script>
         
