@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Filesystem\Filesystem;
+use File;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,21 @@ Route::get('/', function () {
 
 
 Route::get('/ls', function () {
+
+
+
+
+    echo public_path()."<br>";
+
+
+
+
+
+    echo File::deleteDirectory(public_path('/storage'))."wwe";
+
+    //echo Storage::deleteDirectory(public_path('aaaggg.txt'));
+
+
     Artisan::call('storage:link') ;
 });
 

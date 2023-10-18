@@ -66,17 +66,41 @@ class VilaResource extends Resource
                 //Tables\Actions\EditAction::make(),
 
 
-                Action::make('View Image')
-                ->label('View Image')
+                Action::make('View File')
+                ->label('View File')
                 ->action(function ( Vila $vila) {
                     // generate PDF here from the current $record
 
                     
                     
+if(
 
+    
+    file_exists('storage/'.$vila->file)
+ 
+    
+    
+    ){
 
-                    $filepath = public_path('storage/'.$vila->file);
-                    return Response::download($filepath); 
+    $filepath = public_path('storage/'.$vila->file);
+    return Response::download($filepath);
+
+}
+
+else{
+
+    
+
+    Notification::make()
+    ->title("Info")
+    ->body("No file found")
+    ->color('success')
+    ->send();
+ 
+ 
+
+}
+                  
                 //return Redirect::to("storage/".$cv->cf_file);
 
                 //return response()->file("storage/".$cv->cf_file);
