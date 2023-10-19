@@ -552,7 +552,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"استب
               <div class="container">
         <div class="row">
           <div class="span4"></div>
-          <div class="span4"><img class="center-block" src="logo/logo.png" width="150" height="150"/></div>
+          <div class="span4"><img class="center-block" src="logo/logo_kaif.png" width="150" height="150"/></div>
           <div class="span4"></div>
         </div>
       </div>
