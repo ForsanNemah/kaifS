@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\VilaResource\Pages;
-use App\Filament\Resources\VilaResource\RelationManagers;
-use App\Models\Vila;
+use App\Filament\Resources\KaifResource\Pages;
+use App\Filament\Resources\KaifResource\RelationManagers;
+use App\Models\Kaif;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -25,16 +25,15 @@ use Auth;
 use Redirect;
 use Response;
 
-
-class VilaResource extends Resource
+class KaifResource extends Resource
 {
-    protected static ?string $model = Vila::class;
+    protected static ?string $model = Kaif::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $navigationLabel="Fladolce";
-    protected static ?string $modelLabel="Fladolce";
 
-    protected static ?int $navigationSort = 2;
+    protected static ?string $navigationLabel="kaifalshiuokh";
+    protected static ?string $modelLabel="kaifalshiuokh";
+
     public static function form(Form $form): Form
     {
         return $form
@@ -47,7 +46,7 @@ class VilaResource extends Resource
     {
         return $table
             ->columns([
-                //
+
                 TextColumn::make('quality')->label('Q1'),
                 
                 
@@ -60,14 +59,16 @@ class VilaResource extends Resource
                 TextColumn::make('total_satis')->label('Q5'),
                 TextColumn::make('note')->label('Note'),
                 TextColumn::make('created_at'),
+                //
             ])
             ->filters([
                 //
             ])
             ->actions([
-                //Tables\Actions\EditAction::make(),
+                
 
 
+                
                 Action::make('View File')
                 ->label('View File')
                 ->action(function ( Vila $vila) {
@@ -130,8 +131,9 @@ else{
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListVilas::route('/'),
-            
+            'index' => Pages\ListKaifs::route('/'),
+            'create' => Pages\CreateKaif::route('/create'),
+            'edit' => Pages\EditKaif::route('/{record}/edit'),
         ];
     }    
 }

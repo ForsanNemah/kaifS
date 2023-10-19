@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Filesystem\Filesystem;
-use File;
+ 
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +18,22 @@ use File;
 Route::get('/', function () {
     //return view('welcome');
 });
+
+
+
+Route::get('/vila', function () {
+
+    return view('vila');
+
+});
+
+Route::get('/kaif', function () {
+
+    return view('kaif');
+
+});
+
+
 
 
 Route::get('/ls', function () {
@@ -41,3 +57,7 @@ Route::get('/ls', function () {
 
 
  
+
+
+
+Route::POST('/fu', [App\Http\Controllers\filecontroller::class, 'index'])->name('filepost');
